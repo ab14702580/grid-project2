@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #040404;
+}
+.card{
+    width: 71%;
+    margin: 10px auto;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 288px);
+    grid-template-rows: 320px 320px;
+    border: 2px solid #333;
+    padding: 29px;
+    gap: 18px;
+}
+.card1{
+    position: relative;
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-image{
+    position: relative;
+    width: 266px;
+    height: 218px;
+    background: #333 url('image1.png') no-repeat center / 100% 100%;
+    margin: auto;
+}
+.card-content{
+    padding-left: 10px;
+}
+.card-content h1{
+    text-transform: capitalize;
+}
+.card-animation-position{
+    width: 100%;
+    height: 50%;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+}
+.card-animation{
+    width: 244px;
+    height: 37px;
+    margin: auto;
+    outline: 2px solid #333;
+    border-radius: 50px;
+    overflow: hidden;
+    transform: rotateX(0) translateZ(0);
+    transition: all 0.3s;
+    background: #040404;
+}
+.card-animation-content{
+    width: 183px;
+    height: 17px;
+    background: #333;
+    margin: 10px 20px 0px 48px;
+    border-radius: 30px;
+}
+.card-animation-image{
+    position: absolute;
+    top: 4px;
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+    background: linear-gradient(to left,#E73C7E,#935BEF);
+}
+.card1-animation-image{
+    left: 6px;
+}
+.card1:hover .card-animation{
+    transform: rotateZ(6deg) translateX(6px);
+}
+.card-animation2{
+    width: 193px;
+    height: 37px;
+    margin-top: 15px;
+}
+.card-animation-image2{
+    position: absolute;
+    top: 4px;
+    right: 6px;
+}
+.card-animation-content2{
+    width: 132px;
+    height: 17px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 11px;
+    margin-right: 0;
+}
+
+.card1:hover .card-animation2{
+    transform: rotateZ(-6deg) translateX(-6px);
+}
+.card-animation3{
+    margin-top: 15px;
+}
+.card-content{
+    text-align: center;
+    transform: translateY(95px);
+    transition: all 0.5s;
+}
+.card1:hover .card-content{
+    transform: translateY(0);
+}
+.card-content h1{
+    color: #ddd;
+}
+.card2{
+    position: relative;
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card2-image{
+    width: 264px;
+    height: 215px;
+    margin: 2px auto;
+    position: relative;
+    background: #040404 url('image1.png') no-repeat center / 100% 100%;
+}
+.card2-range-design{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    display: grid;
+    gap: 15px;
+}
+.range{
+    height: 17px;
+    background: #040404;
+    border: 1px solid #333333;
+    border-radius: 30px;
+    transition: 1s;
+}
+.card2:hover .range1{
+    animation: animate 1s cubic-bezier(.45,.46,.67,.66) 1;
+}
+@keyframes animate{
+    from{width: 18px;}
+    to{width: 117px;}
+}
+.card2:hover .range2{
+    animation: animate2 1s cubic-bezier(.45,.46,.67,.66) 1;
+}
+@keyframes animate2{
+    from{width: 18px;}
+    to{width: 195px;}
+}
+.card2:hover .range3{
+    animation: animate3 1s cubic-bezier(.45,.46,.67,.66) 1;
+}
+@keyframes animate3{
+    from{width: 18px;}
+    to{width: 220px;}
+}
+.card2:hover .range4{
+    animation: animate4 1s cubic-bezier(.45,.46,.67,.66) 1;
+}
+@keyframes animate4{
+    from{width: 18px;}
+    to{width: 117px;}
+}
+.card2:hover .range5{
+    animation: animate5 1s cubic-bezier(.45,.46,.67,.66) 1;
+}
+@keyframes animate5{
+    from{width: 18px;
+    
+    }
+    to{width: 152px}
+}
+.card2:hover .range6{
+    animation: animate6 1s cubic-bezier(.45,.46,.67,.66) 1;
+}
+@keyframes animate6{
+    from{width: 18px;}
+    to{width: 190px;}
+}
+.range1{
+    width: 117px;
+}
+.range2{
+    width: 195px;
+}
+.range3{
+    width: 220px;
+}
+.range4{
+    width: 117px;
+}
+.range5{
+    width: 152px;
+}
+.range6{
+    width: 190px;
+}
+.card2-content{
+    position: relative;
+    text-align: center;
+    color: #ddd;
+}
+.card2-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #040404;
+    border-left: 2px solid #333;
+    transition: all 1s;
+}
+.card2:hover .card2-content:before{
+    left: 288px;
+}
+.card2-content h1{
+    text-transform: capitalize;
+}
+.card3{
+    position: relative;
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card3-image{
+    width: 247px;
+    height: 183px;
+    background: linear-gradient(-45deg,rgb(238, 119, 82), rgb(231, 60, 126), rgb(35, 166, 213), rgb(35, 213, 171));
+    background-size: 600%;
+    margin: 10px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: glowing 16s linear infinite alternate;
+}
+@keyframes glowing {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 0; 
+    }
+}
+.card3-content{
+    position: relative;
+    color: #040404;
+    text-align: center;
+    transform: translateX(-105%);
+    transition: all 0.5s;
+    border: 2px solid #ddd;
+    padding: 5px;
+    background: #ddd;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+.card3:hover .card3-content{
+    transform: translateX(0);
+}
+.card3-content h1{
+    text-transform: capitalize;
+}
+.card4{
+    position: relative;
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    grid-column: 1/3;
+}
+.card4-design-image{
+    position: relative;
+    width: 579px;
+    height: 207px;
+    background: #040404 url(image2.png) no-repeat center / 100% 100%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.card4-design-container{
+    display: flex;
+}
+.card4-card1{
+    position: absolute;
+    top: 10px;
+    left: 23px;
+    width: 174px;
+    height: 184px;
+    background: #040404;
+    border: 2px solid #333;
+    border-radius: 10px;
+    transform: rotateZ(-5deg) translateX(22px);
+    transition: all 0.1s;
+    overflow: hidden;
+}
+.card4:hover .card4-card1{
+    transform: rotateZ(0) translateX(0);
+}
+.card4-card2{
+    position: absolute;
+    top: 10px;
+    left: 203px;
+    width: 174px;
+    height: 184px;
+    background: #040404;
+    border: 2px solid #333;
+    border-radius: 10px;
+    z-index: 12;
+}
+.card4-card3{
+    position: absolute;
+    top: 10px;
+    left: 383px;
+    width: 174px;
+    height: 184px;
+    background: #040404;
+    border: 2px solid #333;
+    border-radius: 10px;
+    transform-origin: top;
+    transform: rotateZ(5deg) translateX(-10px);
+    transition: all 0.1s;
+}
+.card4:hover .card4-card3{
+    transform: rotateZ(0) translateX(0);
+}
+.card4-card1-design-stor{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.card4-card1-image{
+    width: 100%;
+    position: absolute;
+    top: 35px;
+}
+.image-card1{
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to right,#E73C7E,#935BEF);
+    margin: auto;
+    border-radius: 50%;
+}
+.card4-card1-content{
+    text-align: center;
+    color: #5D5D5D;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.btn1 button{
+    color: #EF4444;
+    outline: 2px solid #EF4444;
+}
+.card4-card1-content .btn button{
+    width: 85px;
+    height: 25px;
+    margin: auto;
+    margin-top: 10px;
+    background: transparent;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn2 button{
+    color: #22C55E;
+    outline:2px solid #22C55E;
+}
+.btn3 button{
+    color: #E06714;
+    outline: 2px solid #E06714;
+}
+.card4-content{
+    color: #ddd;
+    position: relative;
+    left: 10px;
+    text-align: center;
+    transform: translateY(100px);
+    transition: all 0.5s;
+}
+.card4:hover .card4-content{
+    transform: translateY(0);
+}
+.card4-content h1{
+    text-transform: capitalize;
+}
+.card4-content p{
+    width: 453px;
+    margin: auto;
+}
+.card5{
+    position: relative;
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-image2{
+    position: relative;
+    width: 250px;
+    height: 190px;
+    background: #040404 url(image2.png) no-repeat center / 100% 100%;
+    margin: 10px auto;
+}
+.image-card{
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background: #040404;
+    border-radius: 10px;
+    border: 2px solid #333;
+    transform: rotateZ(0) translateX(0);
+    transition: all 0.2s;
+}
+.image-card1-image{
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right,#E73C7E,#935BEF);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.image-card1-content{
+    position: absolute;
+    left: 62px;
+    top: 11px;
+    color: #ddd;
+}
+.card5:hover .image-card{
+    transform: rotateZ(5deg) translateX(10px);
+}
+.image-card3{
+    position: absolute;
+    right: 0;
+    width: 181px;
+    height: 38px;
+    margin-top: 10px;
+    background: #040404;
+    border-radius: 40px;
+    border: 2px solid #333;
+    transform: rotateZ(0) translateX(0);
+    transition: all 0.2s;
+}
+.image-card3-image{
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(to right, #E73C7E,#935BEF);
+    border-radius: 50%;
+}
+.image-card3-content{
+    position: absolute;
+    right: 45px;
+    top: 8px;
+    text-transform: capitalize;
+    color: #ddd;
+}
+.card5:hover .image-card3{
+    transform: rotateZ(-5deg) translateX(-8px);
+}
+.card-content2{
+    text-align: center;
+    color: #ddd;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.card-content2 h1{
+    text-transform: capitalize;
+}
+.card5:hover .card-content2{
+    opacity: 1;
+}
